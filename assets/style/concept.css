@@ -1,0 +1,325 @@
+.page-header {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+    color: white;
+    padding: 120px 0 80px;
+    position: relative;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-subtitle {
+    color: var(--secondary-green);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    margin-top: 0.5rem;
+}
+
+/* Hero Content */
+.hero-content {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-content h3 {
+    color: var(--secondary-green);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* Problem Solution Cards */
+.ps-cards {
+    background: var(--bg-light);
+}
+
+.ps-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.ps-card.problem {
+    border-left: 5px solid #ef4444;
+}
+
+.ps-card.solution {
+    border-left: 5px solid var(--secondary-green);
+}
+
+.ps-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.ps-card.problem .ps-icon {
+    background: linear-gradient(135deg, #fee2e2, #fecaca);
+    color: #dc2626;
+}
+
+.ps-card.solution .ps-icon {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1));
+    color: var(--secondary-green);
+}
+
+.ps-card h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.ps-card.problem h3 {
+    color: #dc2626;
+}
+
+.ps-card.solution h3 {
+    color: var(--secondary-green);
+}
+
+.ps-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ps-card ul li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+.ps-card.problem ul li::before {
+    content: '×';
+    position: absolute;
+    left: 0;
+    color: #dc2626;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.ps-card.solution ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-green);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Model Breakdown */
+.model-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid var(--secondary-green);
+    transition: transform 0.3s;
+}
+
+.model-card:hover {
+    transform: translateY(-10px);
+}
+
+.model-percentage {
+    font-size: 5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--secondary-green), var(--accent-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.model-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+}
+
+.model-card p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Benefits Grid */
+.benefit-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    height: 100%;
+    border: 2px solid #f1f5f9;
+    transition: all 0.3s;
+}
+
+.benefit-card:hover {
+    border-color: var(--secondary-green);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--secondary-green), var(--accent-teal));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+/* NIOS Section */
+.nios-section {
+    background: linear-gradient(135deg, var(--secondary-green), var(--accent-teal));
+    color: white;
+    padding: 80px 0;
+}
+
+.nios-content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+}
+
+.nios-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.nios-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.nios-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.nios-feature i {
+    font-size: 2rem;
+    color: var(--accent-yellow);
+}
+
+.nios-feature div h5 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Comparison Table */
+.comparison-table {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-table table {
+    width: 100%;
+    margin: 0;
+}
+
+.comparison-table th {
+    background: var(--primary-dark);
+    color: white;
+    padding: 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.comparison-table td {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-light);
+}
+
+.check-icon {
+    color: var(--secondary-green);
+    font-size: 1.5rem;
+}
+
+.cross-icon {
+    color: #dc2626;
+    font-size: 1.5rem;
+}
+
+footer {
+    background: var(--primary-dark);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+footer h5 {
+    color: var(--secondary-green);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .model-percentage {
+        font-size: 3.5rem;
+    }
+}
